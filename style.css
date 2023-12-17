@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: #191818;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 790px; 
+}
+
+.container .signup-img {
+   width: 35%;
+   display: flex;
+
+}
+
+.container .signup-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 10px;
+    flex: 3;
+}
+
+
