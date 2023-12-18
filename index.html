@@ -12,53 +12,61 @@
     <div class="container">
         
         <div class="signup-img">
-            <img src="/images/form-image.jpg" alt="">
+            <img src="/images/form-image.jpg" alt=""> 
+             <div class="image-sidebar">
+                <img src="/images/odin-lined.png" alt="">
+                <span>Odin</span>
+             </div>
         </div>
+
     
         <div class="form-container">
+            
             <div class="description">
                 <p>This is not an online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
 
                 <span>You know you want to.</span>
             </div>
            
+            <div class="form-box">
+                <h3>Let's do this!</h3>
+                <form action="">
+                    <div class="form-inputs">
+                        <label for="first-name">first name</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+        
+                    <div class="form-inputs">
+                        <label for="last-name">last name</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+        
+                    <div class="form-inputs">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+        
+                    <div class="form-inputs">
+                        <label for="phone-number">phone number</label>
+                        <input type="text" name="phone" id="phone-number" required>
+                    </div>
+        
+                    <div class="form-inputs">
+                        <label for="password">password</label>
+                        <input type="password" name="password" id="password" required class="error">
+                    </div>
+        
+                    <div class="form-inputs">
+                        <label for="confirm-password">confirm password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required class="error">
+                    </div>
+                    
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+            
     
-            <form action="">
-    
-                <legend>Let's do this!</legend>
-                <div class="">
-                    <label for="first-name">first name</label>
-                    <input type="text" name="first-name" id="first-name">
-                </div>
-    
-                <div class="">
-                    <label for="last-name">last name</label>
-                    <input type="text" name="last-name" id="last-name">
-                </div>
-    
-                <div class="">
-                    <label for="email">email</label>
-                    <input type="email" name="email" id="email">
-                </div>
-    
-                <div class="">
-                    <label for="phone-number">phone number</label>
-                    <input type="number" name="phone" id="phone-number">
-                </div>
-    
-                <div class="">
-                    <label for="password">password</label>
-                    <input type="password" name="password" id="password">
-                </div>
-    
-                <div class="">
-                    <label for="confirm-password">confirm-password</label>
-                    <input type="password" name="confirm-password" id="confirm-password">
-                </div>
-    
-            </form>
-    
-            <button type="submit">Create Account</button>
+           
         </div>
     </div>
 

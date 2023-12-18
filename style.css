@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/norse');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -21,10 +24,43 @@ body {
 }
 
 .container .signup-img {
+   position: relative;
    width: 37%;
    display: flex;
+   
 
 }
+
+.container .signup-img .image-sidebar{
+    position: absolute;
+    top: 160px;
+    left: 0;
+    background-color: black;
+    opacity: 0.4;
+    display: flex;
+    height: 85px;
+    align-items: center;
+    width: calc(100% - 1px);
+    justify-content: center;
+
+}
+
+.container .signup-img .image-sidebar img{
+    width: 65px;
+    margin-left: 2rem;
+    
+
+   
+}
+
+.container .signup-img .image-sidebar span{
+    color: white;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Norse', sans-serif;
+}
+
 
 .container .signup-img img {
     width: 100%;
@@ -35,11 +71,11 @@ body {
     background-color: #fff;
     padding: 25px;
     flex: 3;
-    background: #ffffff;
+    background: #fafffc;
     
 }
 
-.form-container .description {
+.form-container .description, legend {
     max-width: 420px;
     font-weight: bold;
     font-size: .9rem;
@@ -56,8 +92,55 @@ body {
   
 }
 
+
 .form-container form {
     margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:10px ;
+    max-width: 400px;
+    
+    
 }
+
+.form-container .form-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .form-inputs label {
+    text-transform: uppercase;
+    font-size:.7rem ;
+    
+}
+
+.form-container .form-inputs input {
+    width: 85%;
+    padding: 1.5px;
+    border: 1px solid #E5E7EB;
+    
+}
+
+.form-container .form-inputs input.error {
+    border: 1px solid red; 
+}
+
+.form-container .form-inputs input:focus {
+    border: 1px  solid blue;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+button {
+    margin-top: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #596D48;
+    color: white;
+    width: 150px;
+
+}
+
 
 
