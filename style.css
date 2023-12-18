@@ -54,7 +54,7 @@ body {
 }
 
 .container .signup-img .image-sidebar span{
-    color: white;
+    color: #FFFFFF;
     font-size: 3.5em;
     text-transform: uppercase;
     font-weight: bold;
@@ -75,7 +75,7 @@ body {
     
 }
 
-.form-container .description, legend {
+.form-container .description{
     max-width: 420px;
     font-weight: bold;
     font-size: .9rem;
@@ -131,7 +131,7 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
 }
 
-button {
+.form-container .form-box button {
     margin-top: 2rem;
     padding: 10px;
     border-radius: 5px;
@@ -141,6 +141,18 @@ button {
     width: 150px;
 
 }
+
+.form-container .form-box p {
+    margin-top: 2rem;
+}
+
+.form-container .form-box a {
+    text-decoration: none;
+    font-size: .9rem;
+    color: #596D48;
+}
+
+
 
 
 
