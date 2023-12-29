@@ -25,14 +25,15 @@ body {
 
 .container .signup-img {
    position: relative;
-   width: 37%;
    display: flex;
+   flex: 2;
    
 
 }
 
+
 .container .signup-img .image-sidebar{
-    position: absolute;
+    position: absolute; 
     top: 160px;
     left: 0;
     background-color: black;
@@ -48,10 +49,9 @@ body {
 .container .signup-img .image-sidebar img{
     width: 65px;
     margin-left: 2rem;
-    
-
-   
+     
 }
+
 
 .container .signup-img .image-sidebar span{
     color: #FFFFFF;
