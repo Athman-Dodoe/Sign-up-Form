@@ -90,8 +90,36 @@ form.addEventListener('submit', function(e) {
   checkEmail(email);
   checkPasswordMatch(password, confirmPassword);
 
+  const formData = {
+    firstName: firstName.value,
+    lastName: lastName.value,
+    email: email.value,
+    phoneNumber: phoneNumber.value,
+    password: password.value,
+    confirmPassword: confirmPassword.value,
+  }
+
+  let hasError = false;
+
+  Object.values(formFields).map((e) =>{
+    if(e === false) {
+      hasError = true;
+    }
+  })
+
+  if (hasError) return;
+
+  formValues.push(formData);
+
+  localStorage.setItem('users', JSON.stringify(formValues));
+
   form.reset();
 
-  alert('form submitted successfully')
+  const formControls = [firstName, lastName, phoneNumber, email, password, confirmPassword].map(input => input.parentElement);
+
+  formControls.forEach(control => control.className = "form-inputs");
   
+
+  alert('form submitted successfully')
+
 });
