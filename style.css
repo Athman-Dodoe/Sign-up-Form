@@ -8,18 +8,22 @@
    
 }
 
+:root {
+    --success-color: #2ecc71;
+}
+
 body {
     font-family: "Helvetica", "Arial", "sans-serif";
     display: flex;
     background-color: #191818;
     height: 100vh;
     justify-content: center;
-    
-    
+    min-height: 100vh; 
 }
 
 .container {
     display: flex;
+    max-width: 1300px;
 
 }
 
@@ -27,10 +31,10 @@ body {
    position: relative;
    display: flex;
    flex: 2;
+   justify-content: center;
    
-
+   
 }
-
 
 .container .signup-img .image-sidebar{
     position: absolute; 
@@ -65,6 +69,7 @@ body {
 .container .signup-img img {
     width: 100%;
     object-fit: cover;
+   
 }
 
 .form-container {
@@ -121,15 +126,31 @@ body {
     
 }
 
-.form-container .form-inputs input.error {
-    border: 1px solid red; 
-}
 
 .form-container .form-inputs input:focus {
     border: 1px  solid blue;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
 }
+
+.form-container .form-inputs.sucess input {
+    border-color: var(--success-color);
+}
+
+.form-container .form-inputs small {
+    color: red;
+    visibility: hidden;
+}
+
+.form-container .form-inputs.error small {
+    visibility: visible;
+    
+}
+
+.form-container .form-inputs.error input {
+   border-color: red;
+}
+
 
 .form-container .form-box button {
     margin-top: 2rem;
@@ -150,9 +171,4 @@ body {
     text-decoration: none;
     font-size: .9rem;
     color: #596D48;
-}
-
-
-
-
-
+} 
